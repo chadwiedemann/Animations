@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,12 +17,63 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mro-qh-zU2">
+                                <rect key="frame" x="0.0" y="557" width="320" height="11"/>
+                                <color key="backgroundColor" red="0.29829728603363037" green="0.5999029278755188" blue="0.091581456363201141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="9" id="fxk-p2-LX4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mro-qh-zU2" secondAttribute="trailing" constant="-20" id="Khl-n5-yo2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mro-qh-zU2" secondAttribute="bottom" id="QBo-kU-0kk"/>
+                            <constraint firstItem="Mro-qh-zU2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="SZH-ts-e7r"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="gameOverView" destination="Mro-qh-zU2" id="tE0-eo-kyk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="158.40000000000001" y="406.59333333333331"/>
+            <point key="canvasLocation" x="104" y="332"/>
+        </scene>
+        <!--Game OverVC-->
+        <scene sceneID="9ni-aY-LZ1">
+            <objects>
+                <viewController storyboardIdentifier="GameOver" id="c30-SH-v8m" customClass="GameOverVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vxQ-He-aXi"/>
+                        <viewControllerLayoutGuide type="bottom" id="c5d-Mj-aft"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Ch-3m-h9c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arB-bv-z06">
+                                <rect key="frame" x="125" y="269" width="71" height="30"/>
+                                <state key="normal" title="Play Again"/>
+                                <connections>
+                                    <action selector="playAgainButton:" destination="c30-SH-v8m" eventType="touchUpInside" id="HET-Xf-ZCc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GAME OVER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5v-yT-EYW">
+                                <rect key="frame" x="30" y="69" width="261" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CjI-E0-0Vt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cng-Ca-Zo9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="470" y="320"/>
         </scene>
     </scenes>
 </document>
