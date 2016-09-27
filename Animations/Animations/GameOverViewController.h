@@ -1,5 +1,5 @@
 //
-//  GameOverVC.h
+//  GameOverViewController.h
 //  Animations
 //
 //  Created by Chad Wiedemann on 9/26/16.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GameOverVC : UIViewController
-
-- (IBAction)startNewGameButton:(id)sender;
+@interface GameOverViewController : UIViewController
 - (IBAction)playAgainButton:(id)sender;
+
 @end

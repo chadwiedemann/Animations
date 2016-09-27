@@ -17,8 +17,7 @@
 		D87BC3591D99672C0046D0A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87BC3581D99672C0046D0A2 /* CoreGraphics.framework */; };
 		D87BC35B1D9967370046D0A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87BC35A1D9967370046D0A2 /* UIKit.framework */; };
 		D87BC35E1D996B700046D0A2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87BC35D1D996B700046D0A2 /* QuartzCore.framework */; };
-		D87BC3611D99AECC0046D0A2 /* GameOverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D87BC3601D99AECC0046D0A2 /* GameOverVC.m */; };
-		D87BC3641D99BCD30046D0A2 /* GameOverObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D87BC3631D99BCD30046D0A2 /* GameOverObject.m */; };
+		D8FEA9DA1D9AB6B8003A1371 /* GameOverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FEA9D91D9AB6B8003A1371 /* GameOverVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,10 +35,8 @@
 		D87BC3581D99672C0046D0A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D87BC35A1D9967370046D0A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D87BC35D1D996B700046D0A2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		D87BC35F1D99AECC0046D0A2 /* GameOverVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverVC.h; sourceTree = "<group>"; };
-		D87BC3601D99AECC0046D0A2 /* GameOverVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverVC.m; sourceTree = "<group>"; };
-		D87BC3621D99BCD30046D0A2 /* GameOverObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverObject.h; sourceTree = "<group>"; };
-		D87BC3631D99BCD30046D0A2 /* GameOverObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverObject.m; sourceTree = "<group>"; };
+		D8FEA9D81D9AB6B8003A1371 /* GameOverVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOverVC.h; path = ../GameOverVC.h; sourceTree = "<group>"; };
+		D8FEA9D91D9AB6B8003A1371 /* GameOverVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameOverVC.m; path = ../GameOverVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,14 +74,12 @@
 		D87BC33E1D9965090046D0A2 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				D8FEA9D81D9AB6B8003A1371 /* GameOverVC.h */,
+				D8FEA9D91D9AB6B8003A1371 /* GameOverVC.m */,
 				D87BC3421D9965090046D0A2 /* AppDelegate.h */,
 				D87BC3431D9965090046D0A2 /* AppDelegate.m */,
 				D87BC3451D9965090046D0A2 /* ViewController.h */,
 				D87BC3461D9965090046D0A2 /* ViewController.m */,
-				D87BC3621D99BCD30046D0A2 /* GameOverObject.h */,
-				D87BC3631D99BCD30046D0A2 /* GameOverObject.m */,
-				D87BC35F1D99AECC0046D0A2 /* GameOverVC.h */,
-				D87BC3601D99AECC0046D0A2 /* GameOverVC.m */,
 				D87BC3481D9965090046D0A2 /* Main.storyboard */,
 				D87BC34B1D9965090046D0A2 /* Assets.xcassets */,
 				D87BC34D1D9965090046D0A2 /* LaunchScreen.storyboard */,
@@ -186,8 +181,7 @@
 			files = (
 				D87BC3471D9965090046D0A2 /* ViewController.m in Sources */,
 				D87BC3441D9965090046D0A2 /* AppDelegate.m in Sources */,
-				D87BC3611D99AECC0046D0A2 /* GameOverVC.m in Sources */,
-				D87BC3641D99BCD30046D0A2 /* GameOverObject.m in Sources */,
+				D8FEA9DA1D9AB6B8003A1371 /* GameOverVC.m in Sources */,
 				D87BC3411D9965090046D0A2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +331,7 @@
 				D87BC3551D9965090046D0A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

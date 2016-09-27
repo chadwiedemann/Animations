@@ -42,38 +42,44 @@
             <point key="canvasLocation" x="104" y="332"/>
         </scene>
         <!--Game OverVC-->
-        <scene sceneID="9ni-aY-LZ1">
+        <scene sceneID="tcH-cO-jdq">
             <objects>
-                <viewController storyboardIdentifier="GameOver" id="c30-SH-v8m" customClass="GameOverVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameOverVC" id="I9W-Tt-XoB" customClass="GameOverVC" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vxQ-He-aXi"/>
-                        <viewControllerLayoutGuide type="bottom" id="c5d-Mj-aft"/>
+                        <viewControllerLayoutGuide type="top" id="TkK-nM-ba3"/>
+                        <viewControllerLayoutGuide type="bottom" id="rFU-om-FPj"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3Ch-3m-h9c">
+                    <view key="view" contentMode="scaleToFill" id="TgR-Tt-FMb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arB-bv-z06">
-                                <rect key="frame" x="125" y="269" width="71" height="30"/>
-                                <state key="normal" title="Play Again"/>
-                                <connections>
-                                    <action selector="playAgainButton:" destination="c30-SH-v8m" eventType="touchUpInside" id="HET-Xf-ZCc"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GAME OVER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5v-yT-EYW">
-                                <rect key="frame" x="30" y="69" width="261" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GAME OVER!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USY-uH-q9l">
+                                <rect key="frame" x="33" y="53" width="256" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9g6-PZ-KLe">
+                                <rect key="frame" x="85" y="260" width="152" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="New Game"/>
+                                <connections>
+                                    <action selector="startNewGameButton:" destination="I9W-Tt-XoB" eventType="touchUpInside" id="oj1-Zs-R4P"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="USY-uH-q9l" firstAttribute="top" secondItem="TkK-nM-ba3" secondAttribute="bottom" constant="33" id="COl-V4-WQt"/>
+                            <constraint firstItem="USY-uH-q9l" firstAttribute="centerX" secondItem="TgR-Tt-FMb" secondAttribute="centerX" id="eCW-Ae-Lvy"/>
+                            <constraint firstItem="9g6-PZ-KLe" firstAttribute="centerY" secondItem="TgR-Tt-FMb" secondAttribute="centerY" id="eu3-SI-gPn"/>
+                            <constraint firstItem="9g6-PZ-KLe" firstAttribute="centerX" secondItem="TgR-Tt-FMb" secondAttribute="centerX" id="zfh-xD-ESQ"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="CjI-E0-0Vt"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cng-Ca-Zo9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zd7-hi-boR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="470" y="320"/>
+            <point key="canvasLocation" x="490" y="335"/>
         </scene>
     </scenes>
 </document>

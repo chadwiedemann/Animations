@@ -6,12 +6,12 @@
 //  Copyright © 2016 Chad Wiedemann. All rights reserved.
 #import <QuartzCore/QuartzCore.h>
 #import <UIKit/UIKit.h>
+#import "GameOverViewController.h"
 #import "GameOverVC.h"
-#import "GameOverObject.h"
 
 @interface ViewController : UIViewController <UICollisionBehaviorDelegate>
 
-
+@property (nonatomic, strong) GameOverVC* VC;
 @property (nonatomic, strong) UIDynamicAnimator *animator;
 @property (nonatomic, strong) UIView* barrier;
 @property (nonatomic, strong) UIView* circleView;
